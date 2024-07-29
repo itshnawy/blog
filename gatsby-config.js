@@ -17,7 +17,7 @@ module.exports = {
     description: `مدونة خاصة ب محمد الشناوي، انشر عن البرمجه واطر العمل والشروحات`,
     siteUrl: `https://shnawyblog.vercel.app/`,
     social: {
-      X: `mohammedlshnawy`,
+      x: `mohammedlshnawy`,
     },
   },
   plugins: [
