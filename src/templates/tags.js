@@ -7,7 +7,7 @@ const TagsPage = ({ data }) => {
 
   return (
     <div id="tagswrapper">
-          <Layout location={location} title={siteTitle}>
+          <Layout location={location} title={siteTitle}></Layout>
       <ul>
         {tags.map(tag => (
           <li key={tag.fieldValue}>
@@ -15,7 +15,7 @@ const TagsPage = ({ data }) => {
           </li>
         ))}
       </ul>
-      </Layout>
+
     </div>
   )
 }
