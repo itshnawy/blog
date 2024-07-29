@@ -7,7 +7,7 @@ const TagsPage = ({ data , location}) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
   return (
     <div id="tagswrapper">
-          <Layout location={location} title={siteTitle}/>
+          <Layout location={location} title={siteTitle}>
       
       <ul>
         {tags.map(tag => (
@@ -16,7 +16,7 @@ const TagsPage = ({ data , location}) => {
           </li>
         ))}
       </ul>
-
+</Layout>
     </div>
   )
 }
