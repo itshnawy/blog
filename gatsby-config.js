@@ -9,15 +9,15 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Shnawy's Blog`,
+    title: `مدونة شناوي`,
     author: {
-      name: `Mohammed l Shnawy`,
-      summary: `Who lives in Egypt building useful things.`,
+      name: `محمد الشناوي`,
+      summary: `انسان عايش وبيكود`,
     },
-    description: `A Personal Blog for mohammed anwar`,
-    siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
+    description: `مدونة خاصة ب محمد الشناوي، انشر عن البرمجه واطر العمل والشروحات`,
+    siteUrl: `https://shnawyblog.vercel.app/`,
     social: {
-      twitter: `mohammedlshnawy`,
+      X: `mohammedlshnawy`,
     },
   },
   plugins: [
