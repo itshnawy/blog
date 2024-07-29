@@ -27,10 +27,10 @@
   --spacing-20: 5rem;
   --spacing-24: 6rem;
   --spacing-32: 8rem;
-  --fontFamily-sans: "tajawal";
-  --fontFamily-serif: "tajawal";
-  --font-body: "tajawal";
-  --font-heading: "tajawal";
+  --fontFamily-sans: 'Tajawal';
+  --fontFamily-serif: 'Tajawal';
+  --font-body: 'Tajawal';
+  --font-heading: 'Tajawal';
   --fontWeight-normal: 400;
   --fontWeight-bold: 700;
   --fontWeight-black: 900;
@@ -73,7 +73,7 @@ html {
 }
 
 body {
-  font-family: "Tajawal";
+  font-family: 'Tajawal';
   font-size: var(--fontSize-1);
   color: var(--color-text);
   background: var(--color-background)
