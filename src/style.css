@@ -73,7 +73,7 @@ html {
 }
 
 body {
-  font-family: var(--font-body);
+  font-family: "Tajawal";
   font-size: var(--fontSize-1);
   color: var(--color-text);
   background: var(--color-background)
