@@ -13,7 +13,7 @@ const Search = () => {
     }
   `);
 
-  const { index, store } = data.localSearchBlogs;
+  const { index, store } = data.localSearchPosts;
   const [query, setQuery] = useState('');
   const [results, setResults] = useState([]);
 
