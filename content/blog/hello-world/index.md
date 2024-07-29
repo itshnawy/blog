@@ -1,7 +1,7 @@
 ---
 title: Hello World
 date: "2024-07-29"
-thumb: "./salty_egg.jpg"
+thumb: "./hello-world.jpg"
 description: "Hello World, First blogpost on my Blog"
 ---
 
