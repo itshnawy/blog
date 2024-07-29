@@ -8,7 +8,7 @@ const TagPage = ({ data, pageContext, location}) => {
   const { tag } = pageContext
   const posts = data.allMarkdownRemark.edges
   const siteTitle = data.site.siteMetadata.title 
-
+  const Head = () => <Seo title={tag} />
   
   return (
     <div id="tagswrapper">
@@ -26,7 +26,6 @@ const TagPage = ({ data, pageContext, location}) => {
     </div>
   )
 }
-export const Head = ({tag}) => <Seo title={tag} />
 export const pageQuery = graphql`
   query($tag: String) {
        site {
