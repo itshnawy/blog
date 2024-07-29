@@ -24,8 +24,8 @@
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "gatsby-remark-autolink-headers": "^6.13.1",
-    "gatsby-plugin-local-search": "^2.0.1",
-    "flexsearch": "^0.7.43"
+    "gatsby-plugin-local-search": "^0.0.3",
+    "flexsearch": "^0.7.31"
   },
   "devDependencies": {
     "prettier": "^2.8.8"
