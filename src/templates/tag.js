@@ -7,6 +7,8 @@ import Seo from "../components/seo"
 const TagPage = ({ data, pageContext, location}) => {
   const { tag } = pageContext
   const posts = data.allMarkdownRemark.edges
+  const siteTitle = data.site.siteMetadata.title 
+
   
   return (
     <div id="tagswrapper">
