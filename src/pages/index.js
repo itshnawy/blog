@@ -38,11 +38,11 @@ const BlogIndex = ({ data, location }) => {
                 itemType="http://schema.org/Article"
               >
                 <header>
-                {thumb && (
-              <Link to={post.fields.slug}>
-                <GatsbyImage image={thumb} alt={post.frontmatter.title} />
-              </Link>
-            )}
+                  {thumb && (
+                    <Link to={post.fields.slug}>
+                      <GatsbyImage image={thumb} alt={post.frontmatter.title} />
+                    </Link>
+                  )}
                   <h2>
                     <Link to={post.fields.slug} itemProp="url">
                       <span itemProp="headline">{title}</span>
@@ -69,11 +69,6 @@ const BlogIndex = ({ data, location }) => {
 
 export default BlogIndex
 
-/**
- * Head export to define metadata for the page
- *
- * See: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
- */
 export const Head = () => <Seo title="All posts" />
 
 export const pageQuery = graphql`
@@ -92,11 +87,12 @@ export const pageQuery = graphql`
         frontmatter {
           date(formatString: "MMMM DD, YYYY")
           title
+          description
           thumb {
             childImageSharp {
               gatsbyImageData(width: 300)
-              }
-          description
+            }
+          }
         }
       }
     }
