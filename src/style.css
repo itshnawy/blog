@@ -295,6 +295,7 @@ a:focus {
 }
 .post_thumbnail {
   margin-left: var(--spacing-8);
+  border-radius: 5px;
 }
 
 #bio-info {
