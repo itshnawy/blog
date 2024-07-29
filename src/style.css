@@ -97,7 +97,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--font-heading);
+  font-family: 'Tajawal';
   margin-top: var(--spacing-12);
   margin-bottom: var(--spacing-6);
   line-height: var(--lineHeight-tight);
@@ -282,7 +282,7 @@ a:focus {
 
 .header-link-home {
   font-weight: var(--fontWeight-bold);
-  font-family: var(--font-heading);
+  font-family: 'Tajawal';
   text-decoration: none;
   font-size: var(--fontSize-2);
 }
@@ -314,7 +314,7 @@ a:focus {
 
 .blog-post header p {
   font-size: var(--fontSize-2);
-  font-family: var(--font-heading);
+  font-family: 'Tajawal';
 }
 
 .blog-post-nav ul {
