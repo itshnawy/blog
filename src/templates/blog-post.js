@@ -28,6 +28,8 @@ const BlogPostTemplate = ({
         />
         <hr />
         <footer>
+          <p>{post.frontmatter.tags}</p>
+        <hr />
           <Bio />
         </footer>
       </article>
