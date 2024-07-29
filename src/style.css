@@ -296,9 +296,13 @@ a:focus {
 .post_thumbnail {
   margin-left: var(--spacing-8);
 }
-
-.bio p {
+#bio-info p {
+  margin-right: var(--spacing-3);
   margin-bottom: var(--spacing-0);
+}
+#bio-info {
+  display: flex;
+  align-items: center;
 }
 
 .bio-avatar {
