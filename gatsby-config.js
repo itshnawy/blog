@@ -138,7 +138,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-local-search',
       options: {
-        name: 'blogs',
+        name: 'posts',
         engine: 'flexsearch',
         engineOptions: {
           tokenize: 'forward'
