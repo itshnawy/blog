@@ -23,7 +23,7 @@ const Layout = ({ location, title, children }) => {
   return (
     <div className="global-wrapper" data-is-root-path={isRootPath}>
       <header className="global-header">{header}
-        <a href="/tags">الاقسام<a></header>
+        <a href="/tags">الاقسام</a></header>
       <main>{children}</main>
       <footer>
         © {new Date().getFullYear()}, بواسطة
