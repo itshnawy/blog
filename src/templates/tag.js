@@ -4,13 +4,13 @@ import Layout from "../components/layout"
 import Bio from "../components/bio"
 import Seo from "../components/seo"
 
-const TagPage = ({ data, pageContext }) => {
+const TagPage = ({ data, pageContext, location}) => {
   const { tag } = pageContext
   const posts = data.allMarkdownRemark.edges
   
   return (
     <div id="tagswrapper">
-               <Layout location='/' title={siteTitle}>
+               <Layout location={location} title={siteTitle}>
                <Bio /> 
       <h3>التدوينات التابعه للقسم "{tag}"</h3>
       <ul>
