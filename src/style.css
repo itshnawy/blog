@@ -256,6 +256,14 @@ a:focus {
 
 .global-header {
   margin-bottom: var(--spacing-12);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.global-header a {
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .main-heading {
@@ -323,6 +331,12 @@ a:focus {
   margin-bottom: var(--spacing-0);
   min-width: 50px;
   border-radius: 100%;
+}
+
+#tagswrapper {
+  margin: var(--spacing-0) auto;
+  max-width: var(--maxWidth-wrapper);
+  padding: var(--spacing-10) var(--spacing-5);
 }
 
 .blog-post header h1 {

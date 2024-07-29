@@ -1,12 +1,13 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
+import Layout from "../components/layout"
 
 const TagsPage = ({ data }) => {
   const tags = data.allMarkdownRemark.group
 
   return (
-    <div>
-      <h1>Tags</h1>
+    <div id="tagswrapper">
+          <Layout location={location} title={siteTitle}>
       <ul>
         {tags.map(tag => (
           <li key={tag.fieldValue}>
