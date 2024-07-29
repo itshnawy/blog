@@ -2,24 +2,12 @@ import React from "react"
 import { graphql, Link } from "gatsby"
 import Layout from "../components/layout"
 import Bio from "../components/bio"
-import { Helmet } from "react-helmet"
+import Seo from "../components/seo"
 
-class Application extends React.Component {
-  render() {
-    return (
-      <div className="application">
-        <Helmet>
-          <meta charSet="utf-8" />
-          <title>الاقسام | مدونة شناوي</title>
-          <link rel="canonical" href="/" />
-        </Helmet>
-      </div>
-    )
-  }
-}
+
 const TagsPage = ({ data , location}) => {
   const tags = data.allMarkdownRemark.group
-  const siteTitle = data.site.siteMetadata?.title || `الاقسام`
+  const siteTitle = data.site.siteMetadata.title 
   return (
     <div id="tagswrapper">
           <Layout location={location} title={siteTitle}>
@@ -35,6 +23,7 @@ const TagsPage = ({ data , location}) => {
     </div>
   )
 }
+export const Head = () => <Seo title="الأقسام" />
 
 export const pageQuery = graphql`
   query {

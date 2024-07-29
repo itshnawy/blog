@@ -70,7 +70,7 @@ const BlogIndex = ({ data, location }) => {
 
 export default BlogIndex
 
-export const Head = () => <Seo title="All posts" />
+export const Head = () => <Seo title="كل التدوينات" />
 
 export const pageQuery = graphql`
   {
