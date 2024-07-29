@@ -54,7 +54,7 @@
   --color-heading: #bcbcbc;
   --color-heading-black: #1b85cf;
   --color-accent: #d1dce5;
-  --color-background: #021526;
+  --color-background: #031525;
 }
 
 /* HTML elements */
@@ -296,14 +296,17 @@ a:focus {
 .post_thumbnail {
   margin-left: var(--spacing-8);
 }
-#bio-info p {
-  margin-right: var(--spacing-3);
-  margin-bottom: var(--spacing-0);
-}
+
 #bio-info {
   display: flex;
   align-items: center;
 }
+
+#bio-info p {
+  margin-right: var(--spacing-3);
+  margin-bottom: var(--spacing-0);
+}
+
 
 .bio-avatar {
   margin-right: var(--spacing-4);
