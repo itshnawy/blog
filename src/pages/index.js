@@ -40,7 +40,7 @@ const BlogIndex = ({ data, location }) => {
                 <header>
                   {thumb && (
                     <Link to={post.fields.slug}>
-                      <GatsbyImage image={thumb} alt={post.frontmatter.title} />
+                      <GatsbyImage image={thumb} className="post_thumbnail" alt={post.frontmatter.title} />
                     </Link>
                   )}
                   <h2>
