@@ -15,6 +15,7 @@ const TagsPage = ({ data }) => {
           </li>
         ))}
       </ul>
+      </Layout>
     </div>
   )
 }
