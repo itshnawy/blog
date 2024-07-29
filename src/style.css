@@ -236,6 +236,14 @@ a:focus {
 
 /* Custom classes */
 
+#tags li {
+  list-style: none;
+
+  display: inline-block;
+
+  margin-inline-start: 5px;
+
+}
 .global-wrapper {
   margin: var(--spacing-0) auto;
   max-width: var(--maxWidth-wrapper);
