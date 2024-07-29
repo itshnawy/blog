@@ -134,42 +134,6 @@ module.exports = {
           },
         ],
       },
-    },
-    {
-      resolve: 'gatsby-plugin-local-search',
-      options: {
-        name: 'posts',
-        engine: 'flexsearch',
-        engineOptions: {
-          tokenize: 'forward'
-        },
-        query: `
-          {
-            allMarkdownRemark {
-              nodes {
-                id
-                frontmatter {
-                  title
-                }
-                fields {
-                  slug
-                }
-                rawMarkdownBody
-              }
-            }
-          }
-        `,
-        ref: 'id',
-        index: ['title', 'body'],
-        store: ['id', 'fields', 'title', 'rawMarkdownBody'],
-        normalizer: ({ data }) =>
-          data.allMarkdownRemark.nodes.map((node) => ({
-            id: node.id,
-            path: node.fields.slug,
-            title: node.frontmatter.title,
-            body: node.rawMarkdownBody,
-          })),
-      },
-    },
+    }
   ],
 };
