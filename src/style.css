@@ -263,6 +263,11 @@ a:focus {
   margin-bottom: var(--spacing-8);
   margin-top: var(--spacing-8);
 }
+.post-list-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 
 .post-list-item p {
   margin-bottom: var(--spacing-0);
