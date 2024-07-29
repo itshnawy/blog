@@ -6,7 +6,7 @@ import { Index } from 'flexsearch';
 const Search = () => {
   const data = useStaticQuery(graphql`
     query {
-      localSearchBlogs {
+      localSearchPosts {
         index
         store
       }
