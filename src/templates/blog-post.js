@@ -28,7 +28,10 @@ const BlogPostTemplate = ({
         />
         <hr />
         <footer>
-          <p>{post.frontmatter.tags}</p>
+          <p>{post.frontmatter.tags.map(tag=>
+            tag
+          )
+            }</p>
         <hr />
           <Bio />
         </footer>
