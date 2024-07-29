@@ -28,10 +28,11 @@ const BlogPostTemplate = ({
         />
         <hr />
         <footer>
-          <ul id="tags">{post.frontmatter.tags.map(tag=>
-           <li> tag <li>
-          )
-            }</ul>
+        <ul id="tags">
+          {post.frontmatter.tags.map((tag, index) => (
+            <li key={index}>{tag}</li>
+          ))}
+          </ul>
         <hr />
           <Bio />
         </footer>
