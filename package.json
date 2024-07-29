@@ -9,7 +9,6 @@
   },
   "dependencies": {
     "gatsby-omni-font-loader": "^2.0.2",
-    "gatsby-plugin-prefetch-google-fonts" : "^2.0.3",
     "gatsby": "^5.13.5",
     "gatsby-plugin-feed": "^5.13.1",
     "gatsby-plugin-image": "^3.13.1",
