@@ -26,7 +26,7 @@ const TagPage = ({ data, pageContext, location}) => {
   )
 }
 
-const Head = () => <Seo title="قسم" />
+export const Head = () => <Seo title="قسم" />
 export const pageQuery = graphql`
   query($tag: String) {
        site {

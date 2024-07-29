@@ -30,7 +30,7 @@ const BlogPostTemplate = ({
         <footer>
         <ul id="tags">
           {post.frontmatter.tags.map((tag, index) => (
-            <li key={index}>{tag}</li>
+            <li key={index}> <Link to={`/tags/${tag}/`}>{tag}</Link></li>
           ))}
           </ul>
         <hr />
