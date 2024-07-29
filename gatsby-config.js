@@ -9,10 +9,10 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Anwar's Blog`,
+    title: `Shnawy's Blog`,
     author: {
-      name: `Mohammed Anwar`,
-      summary: `who lives in Egypt building useful things.`,
+      name: `Mohammed l Shnawy`,
+      summary: `Who lives in Egypt building useful things.`,
     },
     description: `A Personal Blog for mohammed anwar`,
     siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
