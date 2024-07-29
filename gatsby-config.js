@@ -121,5 +121,18 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: `gatsby-omni-font-loader`,
+      options: {
+        enableListener: true,
+        preconnect: [`https://fonts.googleapis.com`, `https://fonts.gstatic.com`],
+        web: [
+          {
+            name: `Tajawal`,
+            file: `https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap`,
+          },
+        ],
+      },
+    },
   ],
 }
