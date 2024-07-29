@@ -9,12 +9,12 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `مدونة أنور`,
+    title: `Anwar's Blog`,
     author: {
-      name: `محمد أنور`,
-      summary: `انسان يعيش`,
+      name: `Mohammed Anwar`,
+      summary: `who lives in Egypt building useful things.`,
     },
-    description: `مدونة شخصيه لمحمد أنور بيكتب فيها اي شيء`
+    description: `A Personal Blog for mohammed anwar`,
     siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
     social: {
       twitter: `mohammedlshnawy`,
