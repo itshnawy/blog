@@ -10,7 +10,7 @@ const TagPage = ({ data, pageContext, location}) => {
   const siteTitle = data.site.siteMetadata.title 
   
   return (
-    const Head = () => <Seo title={ tag } />
+     <Seo title={tag} />
     <div id="tagswrapper">
                <Layout location={location} title={siteTitle}>
                <Bio /> 
