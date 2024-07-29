@@ -345,4 +345,7 @@ a:focus {
   ol {
     list-style-position: inside;
   }
+  .post-list-item {
+    flex-direction: column;
+   }
 }
