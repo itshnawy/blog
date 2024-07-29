@@ -5,7 +5,7 @@ import Bio from "../components/bio"
 
 const TagsPage = ({ data , location}) => {
   const tags = data.allMarkdownRemark.group
-  const siteTitle = data.site.siteMetadata?.title || `Title`
+  const siteTitle = data.site.siteMetadata?.title || `الاقسام`
   return (
     <div id="tagswrapper">
           <Layout location={location} title={siteTitle}>

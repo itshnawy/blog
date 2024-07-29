@@ -179,6 +179,22 @@ ol li {
   margin-bottom: calc(var(--spacing-8) / 2);
 }
 
+
+#tagswrapper li {
+  list-style: none;
+  display: inline-block;
+  margin-inline-start: 5px;
+  background: #02213a;
+  padding: 15px;
+  border-radius: 3px;
+}
+
+#tagswrapper li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+
 li > p {
   margin-bottom: calc(var(--spacing-8) / 2);
 }
