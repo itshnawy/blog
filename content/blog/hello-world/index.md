@@ -1,7 +1,7 @@
 ---
 title: Hello World
 date: "2015-05-01T22:12:03.284Z"
-hero_image: "./salty_egg.jpg"
+thumb: "./salty_egg.jpg"
 description: "Hello World"
 ---
 

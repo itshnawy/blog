@@ -1,5 +1,6 @@
 import * as React from "react"
 import { Link, graphql } from "gatsby"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
@@ -28,7 +29,7 @@ const BlogIndex = ({ data, location }) => {
       <ol style={{ listStyle: `none` }}>
         {posts.map(post => {
           const title = post.frontmatter.title || post.fields.slug
-
+          const thumb = getImage(post.frontmatter.thumb)
           return (
             <li key={post.fields.slug}>
               <article
@@ -37,6 +38,11 @@ const BlogIndex = ({ data, location }) => {
                 itemType="http://schema.org/Article"
               >
                 <header>
+                {thumb && (
+              <Link to={post.fields.slug}>
+                <GatsbyImage image={thumb} alt={post.frontmatter.title} />
+              </Link>
+            )}
                   <h2>
                     <Link to={post.fields.slug} itemProp="url">
                       <span itemProp="headline">{title}</span>
@@ -86,6 +92,10 @@ export const pageQuery = graphql`
         frontmatter {
           date(formatString: "MMMM DD, YYYY")
           title
+          thumb {
+            childImageSharp {
+              gatsbyImageData(width: 300)
+              }
           description
         }
       }
