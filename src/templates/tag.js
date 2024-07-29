@@ -8,9 +8,9 @@ const TagPage = ({ data, pageContext, location}) => {
   const { tag } = pageContext
   const posts = data.allMarkdownRemark.edges
   const siteTitle = data.site.siteMetadata.title 
-  const Head = () => <Seo title={tag} />
   
   return (
+    const Head = () => <Seo title={ tag } />
     <div id="tagswrapper">
                <Layout location={location} title={siteTitle}>
                <Bio /> 
