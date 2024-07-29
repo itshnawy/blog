@@ -301,6 +301,7 @@ a:focus {
 #bio-info {
   display: flex;
   align-items: center;
+  flex-direction: row;
 }
 
 #bio-info p {
