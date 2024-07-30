@@ -11,6 +11,7 @@ const BlogPostTemplate = ({
 }) => {
   const siteTitle = site.siteMetadata?.title || `Title`
   let words = post.frontmatter.wordscount
+  let wordcount = math.round(+words / 130);
   return (
     <Layout location={location} title={siteTitle}>
       <article
@@ -22,7 +23,7 @@ const BlogPostTemplate = ({
           <h1 itemProp="headline">{post.frontmatter.title}</h1>
           <div className="blog-info">
           <p>{post.frontmatter.date}</p>
-          <p>{math.round(+words / 130)} دقيقة </p>
+          <p>{wordcount} دقيقة </p>
           </div>
         </header>
         <section
