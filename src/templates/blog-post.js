@@ -20,8 +20,10 @@ const BlogPostTemplate = ({
       >
         <header>
           <h1 itemProp="headline">{post.frontmatter.title}</h1>
+          <div className="blog-info">
           <p>{post.frontmatter.date}</p>
-          <p>{ +words / 130} دقيقة </p>
+          <p>{math.round(+words / 130)} دقيقة </p>
+          </div>
         </header>
         <section
           dangerouslySetInnerHTML={{ __html: post.html }}
