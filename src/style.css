@@ -361,6 +361,16 @@ a:focus {
 .blog-post-nav ul {
   margin: var(--spacing-0);
 }
+.blog-info {
+  display: flex;
+  justify-content: space-between;
+}
+.blog-info p {
+  display: inline-block;
+}
+.blog-info p svg {
+  margin-left: 5px;
+}
 
 .gatsby-highlight {
   margin-bottom: var(--spacing-8);
