@@ -22,6 +22,7 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-image`,
+    `gatsby-read-time-estimate`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
