@@ -21,7 +21,6 @@ const BlogPostTemplate = ({
         <header>
           <h1 itemProp="headline">{post.frontmatter.title}</h1>
           <p>{post.frontmatter.date}</p>
-          <p>{post.fields.readTimeEstimate.humanizedDuration}</p>
         </header>
         <section
           dangerouslySetInnerHTML={{ __html: post.html }}
@@ -94,18 +93,6 @@ export const pageQuery = graphql`
       id
       excerpt(pruneLength: 160)
       html
-      fields {
-       readTimeEstimate {
-            duration
-            humanizedDuration
-            imageTime
-            otherLanguageTime
-            otherLanguageTimeCharacters
-            totalImages
-            totalWords
-            wordTime
-          }
-            }
       frontmatter {
         title
         tags
