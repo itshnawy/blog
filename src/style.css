@@ -303,7 +303,7 @@ a:focus {
 .post-list-item {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .post-list-item p {

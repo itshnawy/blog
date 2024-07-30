@@ -1,5 +1,6 @@
 import * as React from "react"
 import { Link, graphql } from "gatsby"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
@@ -12,6 +13,7 @@ const BlogPostTemplate = ({
   const siteTitle = site.siteMetadata?.title || `Title`
   let words = post.frontmatter.wordscount
   let wordcount = Math.round(+words / 130);
+  const thumb = getImage(post.frontmatter.thumb)
   return (
     <Layout location={location} title={siteTitle}>
       <article
@@ -20,6 +22,9 @@ const BlogPostTemplate = ({
         itemType="http://schema.org/Article"
       >
         <header>
+        {thumb && (
+            <GatsbyImage image={thumb} className="post_thumbnail" alt={post.frontmatter.title} />
+         )}
           <h1 itemProp="headline" >{post.frontmatter.title}</h1>
           <div className="blog-info">
           <p>
@@ -124,6 +129,10 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         description
         wordscount
+        thumb {
+         childImageSharp {
+          gatsbyImageData(width: 300)
+        }
       }
       
     }
