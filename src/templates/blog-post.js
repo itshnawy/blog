@@ -20,7 +20,7 @@ const BlogPostTemplate = ({
         itemType="http://schema.org/Article"
       >
         <header>
-          <h1 itemProp="headline">{post.frontmatter.title}</h1>
+          <h1 itemProp="headline" >{post.frontmatter.title}</h1>
           <div className="blog-info">
           <p>
           <svg 
@@ -47,14 +47,12 @@ const BlogPostTemplate = ({
           dangerouslySetInnerHTML={{ __html: post.html }}
           itemProp="articleBody"
         />
-        <hr />
         <footer>
         <ul id="tags">
           {post.frontmatter.tags.map((tag, index) => (
             <li key={index}> <Link to={`/tags/${tag}/`}>{tag}</Link></li>
           ))}
           </ul>
-        <hr />
           <Bio />
         </footer>
       </article>
