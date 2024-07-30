@@ -354,7 +354,7 @@ a:focus {
 }
 
 .blog-post header p {
-  font-size: var(--fontSize-2);
+  font-size: var(--fontSize-1);
   font-family: 'Tajawal';
 }
 
@@ -366,7 +366,8 @@ a:focus {
   justify-content: space-between;
 }
 .blog-info p {
-  display: inline-block;
+  display: flex;
+  align-items: center;
 }
 .blog-info p svg {
   margin-left: 5px;
