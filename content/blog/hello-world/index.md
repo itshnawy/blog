@@ -4,7 +4,7 @@ date: "2024-07-29"
 thumb: "./hello-world.jpg"
 slug: "hello-world"
 description: "اهلا وسهلا، دي اول تدوينة علي مدونتي الجديدة"
-wordscount: "400"
+wordscount: "389"
 tags:
 - شروحات
 - مشاريع
