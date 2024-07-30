@@ -10,7 +10,7 @@ const BlogPostTemplate = ({
   location,
 }) => {
   const siteTitle = site.siteMetadata?.title || `Title`
-
+  let words = post.frontmatter.wordscount
   return (
     <Layout location={location} title={siteTitle}>
       <article
@@ -21,6 +21,7 @@ const BlogPostTemplate = ({
         <header>
           <h1 itemProp="headline">{post.frontmatter.title}</h1>
           <p>{post.frontmatter.date}</p>
+          <p>{ +words / 130} دقيقة </p>
         </header>
         <section
           dangerouslySetInnerHTML={{ __html: post.html }}
@@ -98,6 +99,7 @@ export const pageQuery = graphql`
         tags
         date(formatString: "MMMM DD, YYYY")
         description
+        wordscount
       }
       
     }

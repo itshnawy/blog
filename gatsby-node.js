@@ -132,6 +132,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       description: String
       date: Date @dateformat
       tags: [String]
+      wordscount: String
     }
 
     type Fields {
