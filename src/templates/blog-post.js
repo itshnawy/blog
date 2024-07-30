@@ -11,7 +11,7 @@ const BlogPostTemplate = ({
 }) => {
   const siteTitle = site.siteMetadata?.title || `Title`
   let words = post.frontmatter.wordscount
-  let wordcount = math.round(+words / 130);
+  let wordcount = Math.round(+words / 130);
   return (
     <Layout location={location} title={siteTitle}>
       <article
