@@ -134,6 +134,7 @@ export const pageQuery = graphql`
           gatsbyImageData(width: 300)
         }
       }
+       }
       
     }
     previous: markdownRemark(id: { eq: $previousPostId }) {
